@@ -1,0 +1,130 @@
+:root {
+    --color-background: #F9FAEB;
+    --color-primary: #679E67;
+    --color-secondary: #45784A;
+    --color-accent: #1D811D;
+    --color-text: #12180C;
+    --page-container-width: 1800px;
+}
+
+* {
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+/*Logo*/
+.navbar-logo {
+    display: flex;
+    gap: 6px;
+}
+
+.logo {
+    width: 80px;
+    fill: black;
+}
+.logo-name  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+}
+
+.background-video-container {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Navbar*/
+.navbar {
+    display: flex;
+    margin: 0px auto;
+    padding: 64px 128px;
+    max-width: var(--page-container-width);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.navbar-link {
+    transition: 0.5s;
+}
+
+.navbar-link:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/*Hero section*/
+.hero {
+    display: flex;
+    width: 100vw;
+    margin: 0 auto 100vh auto;
+    padding: 0 128px;
+    padding-top: 30vh;
+    max-width: var(--page-container-width);
+}
+
+.hero-block {
+    color: white;
+}
+
+.hero-block-title {
+    max-width: 1200px;
+    font-size: 110px;
+    line-height: 8rem;
+    text-transform: uppercase;
+    text-shadow: rgba(18, 24, 12, 0.651) 8px 10px 28px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-block-text {
+    font-weight: 500;
+    font-size: 28px;
+    max-width: 900px;
+    line-height: 2.5rem;
+}
+
+/*Card section*/
+.card-gallery {
+    display: flex;
+}
+
+/*Quote section*/
+
+/*CTA banner section*/
+.cta-banner {
+    display: flex;
+}
+
+/*Footer*/
