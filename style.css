@@ -1,6 +1,6 @@
 :root {
     --color-background: #F9FAEB;
-    --color-primary: #679E67;
+    --color-primary: #a7da9a;
     --color-secondary: #45784A;
     --color-accent: #1D811D;
     --color-text: #12180C;
@@ -91,6 +91,7 @@ body {
 
 /*Hero section*/
 .hero {
+    position: absolute;
     display: flex;
     width: 100vw;
     padding: 0 64px;
@@ -98,8 +99,11 @@ body {
 }
 
 .hero-block {
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: white;
-    margin: 25vh auto 5vh 0;
     cursor: default;
 }
 
@@ -124,6 +128,7 @@ body {
 .hero-cta {
     position: relative;
     margin-top: 2vh;
+    margin-bottom: 0vh;
     border-style: none;
     border-radius: 5em;
     background-color: white;
@@ -145,9 +150,10 @@ body {
 .card-section {
     background-color: var(--color-background);
     text-align: center;
-    padding: 140px 0 120px;
-    margin: 0 64px;
-    z-index: -1;
+    padding: 0px 0 120px;
+    margin: 0 90px;
+    margin-top: calc(100vh - 188px);
+    z-index: -1;   
 }
 
 .card-section-title {
@@ -217,15 +223,11 @@ body {
 
 .quote-section {
     text-align: center;
-    background-image: linear-gradient(145deg, #151813, #252c1f);
+    background-image: url(./img/quote-bg-image.jpg);
+    background-position: center;
+    background-size: cover;
     padding: 100px 0;
-    transition: 0.8s;
     }
-
-.quote-section:hover {
-    filter: brightness(1.3) saturate(1.5) contrast(1.2);
-    transition: 0.8s;
-}
 
 .quote-container {
     max-width: 60vw;
@@ -250,8 +252,65 @@ body {
 
 /*CTA banner section*/
 
+.cta-banner-section {
+    background-color: var(--color-background);
+    padding: 100px 64px;
+    text-align: center;
+}
+
 .cta-banner {
+    text-align: left;
     display: flex;
+    justify-content: space-between;
+    padding: 32px 86px;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 30px;
+    background: #efefef;
+    border: none;
+    color: #444;
+    transition: .2s ease-in-out;
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+                -6px -6px 10px rgba(255, 255, 255, .5),
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+.cta-banner-text-container{
+    max-width: 50vw;
+}
+
+.cta-banner-text-title {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cta-banner-text-subtitle {
+    line-height: 1.5em;
+}
+
+.banner-cta-container {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.banner-cta {
+    border: none;
+    padding: 20px 40px;
+    border-radius: 64px;
+    font-size: 16px;
+    margin-left: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(207, 228, 87);
 }
 
 /*Footer*/
+
+.footer {
+    color: white;
+    text-align: center;
+    background-color: var(--color-text);
+    padding: 50px 0;
+}
